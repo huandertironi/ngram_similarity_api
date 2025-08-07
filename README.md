@@ -61,7 +61,7 @@ API leve em Flask que calcula a similaridade entre palavras utilizando a técnic
 
 2. Execute o container:
 
-  `docker run -p 5000:5000 ngram-similarity-api`
+   `docker run -p 5000:5000 ngram-similarity-api`
 
 4. Acesse:
 
@@ -70,15 +70,15 @@ API leve em Flask que calcula a similaridade entre palavras utilizando a técnic
 
 ## Exemplo de resposta JSON
 
-    ```bash
-    [
-      {"word": "abacate", "similarity": 1.0},
-      {"word": "abacaxi", "similarity": 0.75},
-      {"word": "abacá", "similarity": 0.5},
-      {"word": "abacás", "similarity": 0.5},
-      {"word": "abade", "similarity": 0.33}
-    ]
-    ```
+   ```bash
+   [
+     {"word": "abacate", "similarity": 1.0},
+     {"word": "abacaxi", "similarity": 0.75},
+     {"word": "abacá", "similarity": 0.5},
+     {"word": "abacás", "similarity": 0.5},
+     {"word": "abade", "similarity": 0.33}
+   ]
+   ```
 
 ##  Sugestões de uso
 
