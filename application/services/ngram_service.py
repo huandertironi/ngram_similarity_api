@@ -27,6 +27,9 @@ class NGramService:
         B = len(ngrams2)
         C = len(intersection)
 
+        if A + B == 0:
+            return round(0,2)
+
         S = 2 * C / (A + B)
 
         return round(S, 2)
