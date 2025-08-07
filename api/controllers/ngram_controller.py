@@ -22,7 +22,7 @@ class NGramController:
     @cross_origin()
     def get():
 
-        WORD = request.args.get("word")
+        WORD = request.args.get("word", "")
 
         N = int(request.args.get("n", 2))
 
