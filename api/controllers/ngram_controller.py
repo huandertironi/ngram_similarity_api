@@ -19,7 +19,15 @@ class NGramController:
     def get():
 
         WORD = request.args.get("word")
-        N = int(request.args.get("n"))
+
+        n_param = request.args.get("n")
+        if n_param is None:
+            return jsonify({"error": "Missing 'n' parameter"}), 400
+
+        try:
+            N = int(n_param)
+        except ValueError:
+            return jsonify({"error": "'n' must be an integer"}), 400
 
         result = ngram_service.get_top_5(WORD, N)
 
