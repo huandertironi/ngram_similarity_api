@@ -9,7 +9,7 @@ API leve em Flask que calcula a similaridade entre palavras utilizando a técnic
 - Carrega um vocabulário do arquivo `pt‑BR.txt` contendo palavras do português brasileiro.
 - Calcula a similaridade entre a palavra digitada e cada termo do vocabulário usando a fórmula do coeficiente de Sørensen–Dice:
 
-  ![Fórmula da Similaridade](https://latex.codecogs.com/png.image?\dpi{120}&space;S=\frac{2C}{A+B})
+  ![Similarity Formula](https://latex.codecogs.com/png.image?\dpi{150}&space;\color{White}S=\frac{2C}{A+B})
 
   onde:
   - \( A \) e \( B \): tamanho do conjunto de n‑gramas de cada palavra;
