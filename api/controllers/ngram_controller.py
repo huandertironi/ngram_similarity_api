@@ -22,7 +22,10 @@ class NGramController:
     @cross_origin()
     def get():
 
-        WORD = request.args.get("word", "")
+        WORD = request.args.get("word")
+
+        if not WORD:
+            return jsonify({"message": "Parameter 'word' is required."}), 400
 
         N = int(request.args.get("n", 2))
 
